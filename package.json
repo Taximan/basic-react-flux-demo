@@ -1,0 +1,25 @@
+{
+  "name": "fluxTODO",
+  "version": "0.1.0",
+  "description": "a simpler flux TODO",
+  "author": "Dawid(taximan@github)",
+  "license": "MIT",
+  "scripts": {
+  	"browserify": "browserify jsx/app.js > www/js/bundle.js"
+  },
+  "devDependencies": {
+    "browserify": "^9.0.3",
+    "reactify": "^1.0.0"
+  },
+  "browserify": {
+    "transform": [
+      "reactify"
+    ]
+  },
+  "dependencies": {
+    "flux": "^2.0.1",
+    "keymirror": "^0.1.1",
+    "object-assign": "^2.0.0",
+    "react": "^0.12.2"
+  }
+}
